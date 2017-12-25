@@ -1,0 +1,13 @@
+<div class="chat">
+    <ul *ngFor="let item of keys">
+        <li class="item" (click}="">
+            <img src="{{mesList[key][0].avatarSrc}}" let length="mesList[key].length">
+            <div>
+                <p>{{key}}</p>
+                <p>{{mesList[key][length-1].content}}</p>
+                <div class="time">{{mesList[key][length-1].time}}</div>
+                <div class="count">{{length}}</div>
+            </div>
+        </li>
+    </ul>
+</div>

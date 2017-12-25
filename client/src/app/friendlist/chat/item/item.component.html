@@ -1,0 +1,10 @@
+<li class="item" (click}="clickChat()">
+    <img src="{{chat[0].avatarSrc}}" >
+    <div>
+        <p>{{name}}</p>
+        <p>{{chat[chat.length-1].content}}</p>
+        <div class="time">{{chat[chat.length-1].time}}</div>
+        <div class="count" *ngIf="count">{{count}}</div>
+        <i class="iconfont icon-delete"></i>
+    </div>
+</li>

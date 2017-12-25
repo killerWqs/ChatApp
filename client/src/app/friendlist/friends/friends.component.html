@@ -1,0 +1,22 @@
+<div class="friendlist">
+    <ul class="container" *ngFor="let category of categories">
+        <li class="category">
+            <div class="name">
+                <i class="iconfont iconfont-{{transfer}}"></i>
+                <p>{{category}}</p>
+                <div class="online">
+                    <p>{{friends[category].onlineCount}}</p><span>/</span><p>{{friends[category].length}}</p>
+                </div>
+            </div>
+            <ul class="friends" *ngFor="let friend of friends[category]">
+                <li>
+                    <img src="{{friend.avatarSrc}}">
+                    <div class="info">
+                        <p>{{friend.name}}"</p>
+                        <p>{{friend.sign}}</p>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>

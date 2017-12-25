@@ -1,0 +1,45 @@
+<div class="container">
+    <div class="form">
+        <form class="form_0"  [formGroup]="myform_0" (ngSubmit)="onSubmit_0(myform_0.value)">
+            <h2>登录</h2>
+            <input type="text" placeholder="用户名">
+            <div class="notitation notitation_0" *ngIf="!form_0_name.valid">
+                <p>此字段必须填写！</p>
+            </div>
+            <input type="password" placeholder="密码">
+            <div class="notitation notitation_1" *ngIf="!form_0_name.valid">
+                <p>此字段必须填写！</p>
+            </div>
+            <label><input type="checkbox" value="">记住密码</label>
+            <div class="othermethods">
+                <h3>-其他登录方式-</h3>
+                <ul>
+                    <li><img src="assets/imgs/chatapp/qq.png"><p>QQ登录</p></li>
+                    <li><img src="assets/imgs/chatapp/weixin.png"><p>微信登录</p></li>
+                </ul>
+            </div>
+            <input type="submit" value="提交">
+        </form>
+
+        <div class="separator"></div>
+
+        <form class="form_1" [formGroup]="myform_1" (ngSubmit)="onSubmit_1(myform_1.value)">
+            <h2>注册</h2>
+            <input type="text" placeholder="用户名">
+            <div class="notitation notitation_2" *ngIf="!form_1_name.valid">
+                <p>此字段必须填写！</p>
+            </div>
+            <input type="password" placeholder="密码">
+            <div class="notitation notitation_3" *ngIf="!form_0_name.valid">
+                <p>此字段必须填写！</p>
+            </div>
+            <input type="text" placeholder="验证码">
+            <div class="verfycody"><p>{{verfyCode}}</p></div>
+            <div class="notitation notitation_4" *ngIf="!form_0_name.valid">
+                <p>此字段必须填写！</p>
+            </div>
+            <input type="submit" value="注册">
+        </form>
+    </div>
+    <div class="err">{{errState}}</div>
+</div>

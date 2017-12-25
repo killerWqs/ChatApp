@@ -1,0 +1,120 @@
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../assets/imgs/chatapp/register_bg.png) -120px -100px no-repeat;
+}
+
+.container .form {
+    width: 60%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    background: rgba(10,10,10, .77);
+    border: 2px ridge rgba(238, 238, 238, 0.13);
+}
+
+.container .form h2 {
+    font-size: 35px;
+    font-weight: 100;
+    /* text-align: center; */
+    margin-left: 50px;
+    height: 30px;
+}
+
+.container .form .form_0 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.container .form .form_1 {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.notitation {
+    width: auto;
+    height: 40px;
+    position: absolute;
+}
+
+.notitation p {
+    color: red;
+}
+
+.container .form .form_0 .othermethods {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .form .form_0 .othermethods h3 {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.container .form .form_0 .othermethods ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.container .form .form_0 .othermethods ul li {
+    margin: 15px 30px;
+    display: flex;
+    font-size: .8rem;
+}
+
+.container .form .othermethods img{
+    width: 30px;
+    height: 30px;
+}
+
+.container .form form input {
+    width: 70%;
+    height: 40px;
+    margin: 15px auto;
+    background: transparent;
+    border: none;
+    border-bottom: 1.5px solid rgba(238, 238, 238, 0.33);
+    /* outline: medium; */
+}
+
+.container .form .form_0 input[type=checkbox] {
+    width: 15px;
+    margin: 0;
+    margin-left: 55px;
+}
+
+.container .form form input[type=submit] {
+    cursor: pointer;
+    border: 1.5px solid rgba(200,200,200,1);
+    color: white;
+    margin-top: -10px;
+}
+
+.separator {
+    width:1px;
+    height: 75%;
+    background: rgba(200,200,200,1);
+    margin: auto;
+}
+
+
